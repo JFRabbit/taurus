@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>foo</title>
+    <script src="/js/demo/foo.js"></script>
+    <script src="/js/lib/jquery.js"></script>
+</head>
+<body>
+<div>
+    <div>
+        <div>
+            Test show enter msg
+            <div>
+                <input id="input_send" type="text" placeholder="input..." value>
+                <span>Input value:</span>
+                <span id="input_show"></span>
+                <br>
+                <button type="button" onclick="showInput();">
+                    <span>submit</span>
+                </button>
+            </div>
+            <br>
+            Test HTTP Get
+            <div>
+                <button type="button" onclick="testGet()">testGet</button>
+            </div>
+            <br>
+            Test HTTP Post
+            <div>
+                <input id="user_name" type="text" placeholder="please enter name">
+                <br>
+                <input id="user_age" type="text" placeholder="please enter age">
+                <br>
+                <button type="button" onclick="testPost();">
+                    <span>sign in</span>
+                </button>
+                <span id="show_user"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
