@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>foo</title>
-    <script src="/js/demo/foo.js"></script>
     <script src="/js/lib/jquery.js"></script>
+    <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.0.0/jquery.min.js"></script>-->
+    <script src="/js/demo/foo.js"></script>
+    <script src="/js/demo/jquerydemo.js"></script>
 </head>
 <body>
 <div>
@@ -23,7 +25,7 @@
             <br>
             Test HTTP Get
             <div>
-                <button type="button" onclick="testGet()">testGet</button>
+                <button type="button" onclick="testGet();">testGet</button>
             </div>
             <br>
             Test HTTP Post
@@ -36,6 +38,27 @@
                     <span>sign in</span>
                 </button>
                 <span id="show_user"></span>
+            </div>
+            <br>
+            Test JQuery Selector
+            <div>
+                <button id="hide1">id to hide</button>
+                <button class="hide2">class to hide1</button>
+                <button class="hide3">class to hide2</button>
+                <button title="hide4">property to hide</button>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <button>first</button>
+                    </li>
+                    <li>
+                        <button>2</button>
+                    </li>
+                    <li>
+                        <button>last-child</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
