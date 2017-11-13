@@ -40,3 +40,37 @@ $(document).ready(function () {
         $(this).hide();
     });
 });
+
+// ======================Event=======================
+$(document).ready(function () {
+    $("#event").click(function () {
+        console.log("click event");
+    });
+    $("#event").dblclick(function () {
+        console.log("dblclick event");
+    });
+    $("#event").mouseenter(function () {
+        console.log("mouseenter event");
+    });
+    $("#event").mouseleave(function () {
+        console.log("mouseleave event");
+    });
+    $("#event").mousedown(function () {
+        console.log("mousedown event");
+    });
+    $("#event").mouseup(function () {
+        console.log("mouseup event");
+    });
+    $("#event").hover(function () { // mouseenter + mouseleave
+        console.log("hover event");
+    });
+});
+
+$(document).ready(function () {
+    $("#focus").focus(function () {
+        console.log("focus event");
+    });
+    $("#focus").blur(function () {
+        console.log("blur event");
+    });
+});
