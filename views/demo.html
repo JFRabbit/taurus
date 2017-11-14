@@ -7,12 +7,32 @@
     <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.0.0/jquery.min.js"></script>-->
     <script src="/js/demo/foo.js"></script>
     <script src="/js/demo/jquerydemo.js"></script>
+    <style type="text/css">
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+            width: 30ch;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+            width: 20ch;
+        }
+
+        h2 {
+            font-style: italic;
+            color: #00B7FF;
+        }
+    </style>
 </head>
 <body>
 <div>
     <div>
         <div>
-            Test show enter msg
+            <h2>Test show enter msg</h2>
             <div>
                 <input id="input_send" type="text" placeholder="input..." value>
                 <span>Input value:</span>
@@ -22,13 +42,11 @@
                     <span>submit</span>
                 </button>
             </div>
-            <br>
-            Test HTTP Get
+            <h2>Test HTTP Get</h2>
             <div>
                 <button type="button" onclick="testGet();">testGet</button>
             </div>
-            <br>
-            Test HTTP Post
+            <h2>Test HTTP Post</h2>
             <div>
                 <input id="user_name" type="text" placeholder="please enter name">
                 <br>
@@ -39,8 +57,7 @@
                 </button>
                 <span id="show_user"></span>
             </div>
-            <br>
-            Test JQuery Selector
+            <h2>Test JQuery Selector</h2>
             <div>
                 <button id="hide1">id to hide</button>
                 <button class="hide2">class to hide1</button>
@@ -60,14 +77,49 @@
                     </li>
                 </ul>
             </div>
-            <br>
-            Test JQuery Event
+            <h2>Test JQuery Event</h2>
             <div>
                 <button id="event">Event</button>
                 <input id="focus" type="text"/>
             </div>
+            <h2>Test JQuery Animation Effect</h2>
+            <h4>hide/show/toggle</h4>
+            <div>
+                <button id="hide_show1">hide/show</button>
+                <button id="hide_show2">toggle</button>
+                <button id="shower">shower</button>
+            </div>
+            <h4>fadeIn/fadeOut/fadeToggle</h4>
+            <div>
+                <button id="fadeIn">fadeIn</button>
+                <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+                <br>
+                <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+                <br>
+                <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+                <br>
+            </div>
+            <h4>slideDown/slideUp/slideToggle</h4>
+            <div>
+                <div id="flip">flip</div>
+                <div id="panel">Hello World</div>
+            </div>
+            <h4>animate</h4>
+            <div>
+                <button class="default_div">default</button>
+                <button id="stop_animate">stop</button>
+                <button id="animate0">Toggle</button>
+                <button id="animate1">animate1</button>
+                <button id="animate2">animate2</button>
+                <button id="animate3">animate3</button>
+                <button id="animate4">animate callback</button>
+                <button id="animate5">Chaining</button>
+                <div id="animate" class="animate"
+                     style="background:#98bf21;height:100px;width:100px;position:relative;">HELLO
+                </div>
+            </div>
             <br>
-            TODO 隐藏、显示、切换，滑动，淡入淡出，以及动画
+            <!--隐藏、显示、切换，滑动，淡入淡出，以及动画-->
         </div>
     </div>
 </div>
