@@ -110,7 +110,7 @@ $(document).ready(function () {
             height: "100px",
             width: "100px",
             position: "relative",
-            fontSize: '1em',
+            fontSize: '1em'
         }).css("color", '#000000');
     });
     // ======================stop animate=======================
@@ -122,5 +122,13 @@ $(document).ready(function () {
         $("#animate").css("color", "#FF0000")
             .slideUp(2000)
             .slideDown(2000)
+    });
+
+    // ======================HTML=======================
+    // ======================Catch HTML=======================
+    $("#show_text_and_val").click(function () {
+        console.log($("#text").text());
+        console.log($("#text").attr("href"));
+        console.log($("#val").val());
     });
 });
