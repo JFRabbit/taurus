@@ -158,7 +158,7 @@ $(document).ready(function () {
     });
     // ======================append|prepend|before|after=======================
     $("#append_prepend_before_after_button").click(function () {
-        var append_1 = "<span> append_1</span>";
+        var append_1 = "<span id='foo1'> append_1</span>";
         var append_2 = "<span> append_2</span>";
         var prepend_1 = "<span>prepend_1 </span>";
         var prepend_2 = "<span>prepend_2 </span>";
@@ -172,4 +172,14 @@ $(document).ready(function () {
         $("#append_prepend_before_after_span").before(before_1, before_2);
         $("#append_prepend_before_after_span").after(after_1, after_2);
     });
+    $("#remove").click(function () {
+        $("span").remove("#foo1");
+    });
+    $("#removeAll").click(function () {
+        $("#append_prepend_before_after_span").remove();
+    });
+    $("#empty").click(function () {
+        $("#empty_div").empty();
+    });
+
 });
