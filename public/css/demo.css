@@ -1,0 +1,24 @@
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    width: 30ch;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+    width: 20ch;
+}
+
+h2 {
+    font-style: italic;
+    color: #00B7FF;
+}
+
+.background{
+    background-color: #fff7e2;
+    width: 1200px;
+    margin: 0 auto;
+}
