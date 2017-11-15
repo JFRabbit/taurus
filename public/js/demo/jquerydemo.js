@@ -156,4 +156,20 @@ $(document).ready(function () {
             return "callback: " + i + " " + originalText;
         });
     });
+    // ======================append|prepend|before|after=======================
+    $("#append_prepend_before_after_button").click(function () {
+        var append_1 = "<span> append_1</span>";
+        var append_2 = "<span> append_2</span>";
+        var prepend_1 = "<span>prepend_1 </span>";
+        var prepend_2 = "<span>prepend_2 </span>";
+        var before_1 = "<span>before_1 </span>";
+        var before_2 = "<span>before_2 </span>";
+        var after_1 = "<span> after_1</span>";
+        var after_2 = "<span> after_2</span>";
+
+        $("#append_prepend_before_after_span").append(append_1, append_2);
+        $("#append_prepend_before_after_span").prepend(prepend_1, prepend_2);
+        $("#append_prepend_before_after_span").before(before_1, before_2);
+        $("#append_prepend_before_after_span").after(after_1, after_2);
+    });
 });
