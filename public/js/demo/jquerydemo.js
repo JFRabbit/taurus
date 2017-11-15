@@ -110,8 +110,8 @@ $(document).ready(function () {
             height: "100px",
             width: "100px",
             position: "relative",
-            fontSize: '1em'
-        });
+            fontSize: '1em',
+        }).css("color", '#000000');
     });
     // ======================stop animate=======================
     $("#stop_animate").click(function () {
@@ -119,7 +119,7 @@ $(document).ready(function () {
     });
     // ======================JQuery Chaining=======================
     $("#animate5").click(function () {
-        $("#animate").css("color", "red")
+        $("#animate").css("color", "#FF0000")
             .slideUp(2000)
             .slideDown(2000)
     });
