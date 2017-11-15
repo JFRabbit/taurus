@@ -128,7 +128,32 @@ $(document).ready(function () {
     // ======================Catch HTML=======================
     $("#show_text_and_val").click(function () {
         console.log($("#text").text());
+        console.log($("#text").html()); // 可包含标签
         console.log($("#text").attr("href"));
         console.log($("#val").val());
+    });
+    $("#change_text_and_val").click(function () {
+        $("#text").text("changed1");
+        $("#text").html("<b>changed2</b>");
+        // $("#text").attr("href", "http://www.google.com");
+        $("#text").attr({
+            "href": "http://www.google.com",
+            "title": "set title"
+        });
+        $("#val").val("changed");
+    });
+    $("#change_callback").click(function () {
+        $("#text").text(function (i, originalText) {
+            return "callback: " + i + " " + originalText;
+        });
+        // $("#text").html(function (i, originalText) {
+        //     return "callback: " + i + " " + originalText;
+        // });
+        $("#text").attr("href", function (i, originalText) {
+            return "callback: " + i + " " + originalText;
+        });
+        $("#val").val(function (i, originalText) {
+            return "callback: " + i + " " + originalText;
+        });
     });
 });
