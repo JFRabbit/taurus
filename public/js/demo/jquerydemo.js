@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    // ======================Alert Confirm Prompt=======================
+    $("#alert").click(function () {
+        window.alert("alert");
+    });
+    $("#confirm").click(function () {
+        window.confirm("confirm");
+    });
+    $("#prompt").click(function () {
+        window.prompt("prompt")
+    });
     // ======================Selector=======================
     // id => #
     $("#hide1").click(function () {
