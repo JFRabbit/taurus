@@ -191,5 +191,14 @@ $(document).ready(function () {
     $("#empty").click(function () {
         $("#empty_div").empty();
     });
-
+    // ======================add|remove|toggle class=======================
+    $("#add_class").click(function () {
+        $("#css_class").addClass("blue");
+    });
+    $("#remove_class").click(function () {
+        $("#css_class").removeClass("blue");
+    });
+    $("#toggle_class").click(function () {
+        $("#css_class").toggleClass("blue");
+    });
 });
